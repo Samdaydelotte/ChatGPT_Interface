@@ -3,6 +3,7 @@
 
 import speech_recognition as sr
 import pyttsx3 
+import pyaudio
 
 # Initialize the recognizer 
 r = sr.Recognizer() 
@@ -26,12 +27,14 @@ def SpeakNow():
                 # the surrounding noise level 
                 r.adjust_for_ambient_noise(source2, duration=0.2)
                 
+                print("Mic Ready")
                 # listens for the user's input 
                 audio2 = r.listen(source2)
                 
                 # Using Google to recognize audio
                 MyText = r.recognize_google(audio2)
                 MyText = MyText.lower()
+                return MyText
 
 
 
@@ -41,5 +44,3 @@ def SpeakNow():
             
         except sr.UnknownValueError:
             print("Sorry, I did not understand your audio. Please try again.")
-
-# Test

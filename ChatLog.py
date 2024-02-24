@@ -5,7 +5,7 @@ from Voice import SpeakText
 Chats = "AIResponce.txt"
 
 def chatlogs():
-    with open(Chats, 'r') as file:
+    with open(Chats, 'r', encoding="utf-8") as file:
     # Read the contents of the file
         chat = file.read()
         file.close()
