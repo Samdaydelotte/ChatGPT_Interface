@@ -41,3 +41,5 @@ def SpeakNow():
             
         except sr.UnknownValueError:
             print("Sorry, I did not understand your audio. Please try again.")
+
+# Test

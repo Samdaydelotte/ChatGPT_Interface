@@ -21,3 +21,4 @@ def PhotoManagment():
     thresh, img_bw = cv2.threshold(grey_image, 180, 200, cv2.THRESH_BINARY)
 
     cv2.imwrite("browser1.jpg", img_bw)
+    # Test

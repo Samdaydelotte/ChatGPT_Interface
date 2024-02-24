@@ -56,3 +56,5 @@ def highlight_text(image_path, text_to_highlight, output_image_path):
 
 # Example usage
 # highlighted_image = highlight_text("browser1.jpg", "message", "Highlighted.jpg")
+
+# Test

@@ -53,3 +53,5 @@ def speechInstructions(speech):
 def paste():
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("enter")
+
+# Test
