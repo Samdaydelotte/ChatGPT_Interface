@@ -30,7 +30,7 @@ def SpeakNow():
                 print("Mic Ready")
                 # listens for the user's input 
                 audio2 = r.listen(source2)
-                
+                print("Lisen Finished")
                 # Using Google to recognize audio
                 MyText = r.recognize_google(audio2)
                 MyText = MyText.lower()

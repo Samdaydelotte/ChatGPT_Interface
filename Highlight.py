@@ -53,8 +53,3 @@ def highlight_text(image_path, text_to_highlight, output_image_path):
         sys.exit()
 
     return image
-
-# Example usage
-# highlighted_image = highlight_text("browser1.jpg", "message", "Highlighted.jpg")
-
-# Test
